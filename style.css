@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+body{
+    background-color: #18191a;
+}
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #242526;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding:  0 20px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.search-bar{
+    background-color: #3a3b3c;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 20px;
+    
+    outline: none;
+    font-size: 14px;
+    width: 180px;
+}
+.search-bar::placeholder{
+    color: white;
+}
+/* navbar center */
+.nav-center{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-icon{
+    font-size: 35px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    color: #b0b3b8;
+    transition: background 0.2s;
+}
+.nav-icon:hover{
+    background-color: #3a3b3c;
+    color: #e4e6eb;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.circle-icon{
+      font-size: 22px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    color: #e4e6eb;
+    background-color: #3a3b3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #3a3b3c;
+}
+.story-container{
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    background-color: #242526;
+    border-radius: 12px;
+    max-width: 850px;
+    width: 100%;
+    justify-content: center;
+}
+.story{
+    width: 130px;
+    height: 200px;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.story:hover{
+    transform: scale(1.03);
+}
+
+.story-main-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.story-profile{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #242526;
+    object-fit: cover;
+}
+
+.story-user{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+
+}
